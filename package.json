@@ -1,0 +1,33 @@
+{
+  "name": "png",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run watch\" \"npm run server\"",
+    "watch": "webpack -w",
+    "server": "nodemon ./service.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^2.0.0-alpha.20",
+    "babel-watch": "^2.0.7",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "jszip": "^3.1.5",
+    "node-zip": "^1.1.1",
+    "nodemon": "^1.18.4",
+    "svg2png": "^4.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "svg-inline-loader": "^0.8.0"
+  }
+}
